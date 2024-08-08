@@ -3,12 +3,17 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-# app = FastAPI(docs_url="/api/docs", openapi_url="/api/openapi.json")
+app = FastAPI(docs_url="/api/docs", openapi_url="/api/openapi.json")
+
+
+@app.get("/api")
+def hello_world():
+    return {"message": "Hi from GenAI SaaS Boilerplate."}
 
 
 @app.get("/api/python")
 def hello_world():
-    return {"message": "Hi from GenAI SaaS Boilerplate."}
+    return {"message": "Hi from Python"}
 
 
 # poetry run uvicorn index:app
