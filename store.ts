@@ -19,7 +19,7 @@ type TodoStore = {
 };
 
 const URL = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`
+  ? `https://genaisaasboilerplate.najam.pk/api`
   : "http://localhost:3000/api";
 
 export const useStore = create<TodoStore>((set) => ({
