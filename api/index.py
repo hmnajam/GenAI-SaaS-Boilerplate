@@ -16,9 +16,13 @@ def hello_world():
     return {"message": "Hi from Python"}
 
 
+@app.get("/api/healthchecker")
+def healthchecker():
+    return {"status": "success", "message": "Integrate FastAPI Framework with Next.js"}
+
+
 # poetry run uvicorn index:app
 # "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
-
 
 # Run the server: poetry run uvicorn crypto_trading_bot.main:app --reload --host 0.0.0.0 --port 8000
 # Open the following urls:
