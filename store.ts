@@ -18,6 +18,12 @@ type TodoStore = {
   deleteTodo: (id: number) => void;
 };
 
+// Uncomment the following url if you dont have a domain.
+// const URL = process.env.NEXT_PUBLIC_VERCEL_URL
+//   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`
+//   : "http://localhost:3000/api";
+
+// Dont forget to change the domain here.
 const URL = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://genaisaasboilerplate.najam.pk/api`
   : "http://localhost:3000/api";
